@@ -1,12 +1,16 @@
-import React from "react";
 import ExpenseItem from "./ExpenseItem";
-import Card from "./Card";
+import Card from "../UI/Card";
 import "./Expenses.css";
 
 const Expenses = ({ items }) => {
   const renderedItems = items.map((item) => {
     return (
-      <ExpenseItem title={item.title} amount={item.amount} date={item.date} />
+      <ExpenseItem
+        key={item.id}
+        title={item.title}
+        amount={item.amount}
+        date={item.date}
+      />
     );
   });
 
