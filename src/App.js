@@ -1,4 +1,3 @@
-import ExpenseItem from "./components/ExpenseItem";
 import Expenses from "./components/Expenses";
 
 function App() {
@@ -24,7 +23,7 @@ function App() {
     },
   ];
 
-  return <Expenses items={expenses}></Expenses>;
+  return <Expenses items={expenses} />;
 }
 
 export default App;
